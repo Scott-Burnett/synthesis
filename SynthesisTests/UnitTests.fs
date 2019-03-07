@@ -107,10 +107,10 @@ let ``digits`` () =
     digits 1024 |> should equal 4
     digits 9824356 |> should equal 7
     digits 100001 |> should equal 6
-   // digits -18274 |> should equal 5
-   // digits -8000002 |> should equal 7
-   // digits -1 |> should equal 1
-   // digits -2 |> should equal 1
+    digits -18274 |> should equal 5
+    digits -8000002 |> should equal 7
+    digits -1 |> should equal 1
+    digits -2 |> should equal 1
 
 [<Test>]
 let ``minmax`` () =
