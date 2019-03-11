@@ -109,5 +109,5 @@ let coord (x, y) =
                 |_ -> calc ((guess + n / guess) / 2.0) (guess)
         calc (n / 2.0) 0.0
     let distance (a, b) = sqrt ((a - x) * (a - x) + (b - y) * (b - y))
-    let within (j, k) w h = ((x > j) && (x < (j + w * 1.0)) && (y < k) && (y > (k - h * 1.0)))
+    let within (j, k) w h = ((x >= j) && (x <= (j + w * 1.0)) && (y <= k) && (y >= (k - h * 1.0)))
     (distance, within)    
